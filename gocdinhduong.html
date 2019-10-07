@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Góc dinh dưỡng</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="css/css.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  </head>
+  <body>
+<!--<section class="bg-chitiet">-->
+<section id="wrapper">
+<header>
+    <div class="from_header">
+    <div class="logo"><img src="images/logo_logo.png" alt=""></div>
+    <div class="from_login">
+        <span class="span"><input class="search" type="text" name="s" placeholder="Tìm kiếm"><button  class="sp" type="submit" ><i class="fa fa-search"></i></button></span>
+        <div class="login"><a href="#">Đăng nhập</a><a href="dangky.html">Đăng Ký</a></div>
+      </div>
+  </div>
+  </header>
+  <script>
+    $(function() {
+    var pull        = $('#pull');
+      menu        = $('nav ul');
+      menuHeight  = menu.height();
+   
+    $(pull).on('click', function(e) {
+      e.preventDefault();
+      menu.slideToggle();
+    });
+  });
+    </script>
+      <script>
+          
+      $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+        </script>
+    <nav class="clearfix">
+						<a href="#" id="pull">Menu</a>
+					<ul class="clearfix">
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="#">Sản phẩm</a></li>
+						<li><a href="#">Lịch sử</a></li>
+						<li><a href="gocthethao.html">Góc thể thao</a></li>
+						<li><a href="gocdinhduong.html">Góc dinh dưỡng</a></li>
+						<li><a href="#">Đại lý</a></li>
+			
+					</ul>
+					
+				</nav>
+<section class="container">
+<section class="text-reg">
+    <h1>HỎI CHUYÊN GIA</h1>
+  </section>
+<section class="canvas">
+    <canvas id="canvasId" width="100" height="50"></canvas>
+    <script>
+		var context = document.getElementById("canvasId").getContext("2d");
+			
+			// Draw a path
+context.beginPath();
+context.moveTo(0, 0);        // Top Corner
+context.lineTo(50, 50); // Bottom Right
+context.lineTo(100,0);         // Bottom Left
+context.closePath();
+
+// Fill the path
+context.fillStyle = "#ffff00";
+context.fill();
+		</script> 
+  </section>
+<h2 style="
+    color: #00912c;
+    font-size: 25px;
+    border-bottom: 3px solid tomato;
+	font-family: sans-serif;">Dinh Dưỡng</h2>
+		<section class="nutri">
+<article class="doctor"> <img src="https://www.nestlemilo.com.vn/sites/milo_vietnam/files/faq-img-1.jpg" alt="">
+    <h3>BÁC SỸ LƯƠNG LỄ HOÀNG</h3>
+    <h4>PHÒNG TƯ VẤN SỨC KHỎE &amp; NGHIÊN CỨU Y DƯỢC</h4>
+    <a href="#">Bấm để hỏi chuyên gia</a> </article>
+<article id="accordion">
+    <h3>1. Tôi thường pha sữa milo cùng với sữa đặc Ông thọ và bỏ đá vào để uống lạnh, nhưng có người nói pha sữa milo với sữa đặc như thế sẽ có hại, vậy có đúng không? Xin tư vấn giúp, cám ơn!</h3>
+    <div>
+    <p> Như đã thông tin nhiều lần, việc pha sữa Milo với sữa đặc không có gì bất lợi cho sức khỏe, trừ khi người uống là người bệnh tiểu đường, béo phì..thì nên hỏi ý kiến Bs về liều lượng và tần suất uống. </p>
+  </div>
+    <h3>2. Xin hỏi, tôi thấy thành phần của milo có bột cacao vậy trong bột cacao có chứa thành phần cafein không?</h3>
+    <div>
+    <p> Có nhưng với hàm lượng rất thấp đủ để người uống minh mẫn nhưng không háo động, ngon miệng nhưng không gây nghiện. Chính vì thế mới dùng Milo cho trẻ cần tập trung học tập, cần tinh tế trong động tác khi chơi thể thao. </p>
+  </div>
+    <h3>3. Cho e hỏi là e có tập thể hình vậy e nên uống milo trước hay sau khi tập</h3>
+    <div>
+    <p> Trước khi tập để chuẫn bị dường chất cho cơ thể và sau khi tập đễ vừa bổ sung dưởng chất vì tránh tụt đường huyết, hạ canxi vì đã dùng hết trên thao trường. </p>
+  </div>
+    <h3>4. Theo những thông tin cháu được biết thì sữa MILO rất tốt cho bé, vậy không biết người lớn có dùng MILO được không và hiệu quả như thế nào ạ?</h3>
+    <div>
+    <p> Với thành phần cân đối về chát sinh năng và chất kiến tạo đã được nghiên cứu cẫn trọng qua các chuyên gia dinh dưỡng của Nestle, Milo là thức uống vừa ngon vừa bổ cho mọi lứa tuồi muốn mài nhọn sức đề kháng để phòng bệnh, muốn phục hồi nhanh nếu mắc bệnh. </p>
+  </div>
+    <h3>5. Cho mình hỏi uống Milo có gây mập nếu uống mỗi ngày không vì mình cũng lớn rồi, khi uống thì mình thấy milo cũng khá ngọt nên mình cũng lo sẽ gây béo phì. Cám ơn.</h3>
+    <div>
+    <p>Thành phần chất đường trong Milo không thể gây béo phì nếu người dùng sữa đừng ngồi ỳ nhiều giờ trước máy truyền hình, máy vi tính. Thêm vào đó, chất xơ trong Milo là đòn bẩy để một phần đáng kể của chất béo trong thực phẩm được kéo ra ngoài qua đường ruột trước khi lọt được vào máu.</p>
+  </div>
+	<h3>6. Chào chuyên gia,tôi là mẹ của bé Phương Anh.Cháu nhà tôi năm nay 11 tuổi,nặng 54kg nhưng chỉ cao 1m50cm.Chuyên gia tư vấn cho tôi cháu nên ăn uống theo chế độ như thế nào,cảm ơn chuyên gia trước!</h3>
+	<div>
+	<p>Trẻ con còn tiếp tục phát triễn trên cả hai mặt tâm thể tối thiếu cho đến 21 tuổi, thậm chí đến 25 tuổi. Do đó đừng dựa vào một vòng đo nào đó còn thiếu 1, 2 cm rồi kết luận ngay là trẻ chậm tăng trưởng, là trẻ thiếu dinh dưỡng. Ngược lại, cũng đừng vì một vòng đo nào đó thừa 1, 2 phân rồi hốt hoảng với chẩn đoán quá vội vã và cường điệu là trẻ rối loạn tăng trưởng. Ngoại trừ trường hợp trẻ có bệnh mãn tính, trẻ suy dinh dưỡng thấy rỏ nên cần bàn tay can thiệp của bác sĩ chuyên khoa, thông thường chỉ cần theo dõi xem trẻ có ăn ngon, ngủ yên, chơi vui, học trung bình, thay vì mang trẻ cân đo từng ngày. Mặt khác, thay vì quá tập trung vào kích thước nên chú trọng việc bổ sung cho cơ thể rất nhạy cảm của trẻ tập thể dưỡng chất cần thiết cho cơ xương, cho chức năng tư duy … Có Milo hàng ngày sợ gì trẻ suy dinh dưỡng?</p></div>
+	
+	<article class="nextpage2">
+			<section class="pagination2">
+			<a class="active" href="trangchu.html">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">...</a>
+				</section></article>
+  </article>
+</section>
+</section>
+<footer>
+    <section class="logo2"><img src="images/logo_logo.png" alt=""></section>
+    <section class="bq">
+    <p><strong>&copy; 2018 MILO, PD02424</strong></p>
+  </section>
+    <section class="box-footer">
+    <ul class= "link">
+        <li> <a class="link1" target="_blank" href="#">Điều khoản và điều kiện</a> </li>
+        <li> <a class="link2" target="_blank" rel="keep-params" href="#">Quy tắc chính thức</a> </li>
+        <li> <a class="link3" target="_blank" href="#">Chính sách bảo mật</a> </li>
+        <li> <a class="link4" target="_blank" href="#">Hỗ trợ</a> </li>
+      </ul>
+    <ul class="social">
+        <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/facebook.png"></a></li>
+        <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/twitter.png"></a></li>
+        <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/youtube.png"></a></li>
+      </ul>
+  </section>
+    <section class="contact">Nếu có thắc mắc,xin gọi 0236 000 444 hoặc email <a href="#">nestlemilo@gmail.com</a></section>
+  </footer>
+</section>
+</body>
+</html>

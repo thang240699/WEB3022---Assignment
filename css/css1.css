@@ -1,0 +1,68 @@
+/* CSS Document */
+
+.menu02
+{
+    width:70%; 
+    height:30px; 
+    line-height:30px;
+    margin:0 auto;
+}
+.menu02 li
+{
+    position:relative;
+    display:inline-block;
+    width:100%;
+}
+.menu02 li ul
+{
+    position:absolute; 
+    display:none;
+}
+.menu02 li:hover > ul
+{
+    display:block;
+}
+.menu02 a
+{
+    display:block; 
+    color:#fff;
+    background:#606c88;
+}
+.menu02 ul ul,
+.menu02 li:hover > a,
+.menu02 a:hover
+{
+    opacity:.8;
+}
+/*Level 1*/
+.menu02 > ul > li
+{
+    float:left;
+    width:24%;
+}
+.menu02 > ul > li > a
+{
+    width:94%;
+    padding-left:3%; 
+    padding-right:3%; 
+    text-transform:uppercase; 
+    font-weight:bold;
+}
+/*Level 2*/
+.menu02 > ul > li > ul
+{
+    position:absolute; 
+    top:100%; 
+    left:0; 
+    width:100%; 
+}
+.menu02 > ul > li > ul > li
+{
+    width:100%;
+}
+.menu02 > ul > li > ul > li > a
+{
+    width:94%;
+    padding-left:3%;
+    padding-right:3%;
+}

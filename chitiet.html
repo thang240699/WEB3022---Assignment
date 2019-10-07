@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Milo lon</title>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="css/css.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+</head>
+<body>
+<section class="bg-chitiet">
+  <section id="wrapper">
+    <header>
+      <div class="from_header">
+        <div class="logo"><img src="images/logo_logo.png" alt=""></div>
+        <div class="from_login">
+          <span class="span"><input class="search" type="text" name="s" placeholder="Tìm kiếm"><button  class="sp" type="submit" ><i class="fa fa-search"></i></button></span>
+          <div class="login"><a href="#">Đăng nhập</a><a href="dangky.html">Đăng Ký</a></div>
+        </div>
+      </div>
+    </header>
+    <script>
+      $(function() {
+      var pull        = $('#pull');
+        menu        = $('nav ul');
+        menuHeight  = menu.height();
+     
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+    });
+      </script>
+        <script>
+            
+        $(window).resize(function(){
+          var w = $(window).width();
+          if(w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+          }
+        });
+          </script>
+      <nav class="clearfix">
+						<a href="#" id="pull">Menu</a>
+					<ul class="clearfix">
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="#">Sản phẩm</a></li>
+						<li><a href="#">Lịch sử</a></li>
+						<li><a href="gocthethao.html">Góc thể thao</a></li>
+						<li><a href="gocdinhduong.html">Góc dinh dưỡng</a></li>
+						<li><a href="#">Đại lý</a></li>
+			
+					</ul>
+					
+				</nav>
+    <section class="container">
+      <aside class="advertise"><img src="images/banner_1660x530.png" alt=""></aside>
+      <section class="introduce">
+        <h2>MILO LON UỐNG LIỀN</h2>
+        <section class="box-introduce">
+          <article class="img-introduce"><img src="images/milo-lon_0.png" alt=""></article>
+          <article class="text-introduce">
+            <p>Sản phẩm tiện lợi, đầy đủ dưỡng chất với hương vị MILO tuyệt ngon, đúng chuẩn. Sản phẩm được đóng gói dưới dạng LON 240ML rất thích hợp để dùng ở nhà và rất tiện dụng khi đi học, vui chơi.Nestlé MILO cùng công thức cải tiến ACTIV-GO chiết xuất mầm lúa mạch, vitamin và khoáng chất mới, mang lại giá trị dinh dưỡng thiết yếu, cung cấp năng lượng bền bỉ để trẻ năng động và vươn xa hơn.</p>
+            <section class="buy"><a href="#"><i class="fas fa-shopping-cart"></i> Mua ngay</a></section>
+          </article>
+        </section>
+      </section>
+      <section class="constituent">
+        <article class="img-constituent"><img src="images/img_thanhphan.png" alt=""></article>
+        <article class="text-constituent">
+          <h2 class="title-constituent">THÀNH PHẦN</h2>
+          <p>Nước, sữa bột tách kem (skimmed milk powder), đường, Protomalt 2.4% (chiết xuất từ mầm lúa mạch), sirô glucose, bột cacao, dầu bơ, dầu thực vật, bột whey, chất ổn định 471, 407, 401, các khoáng chất (magnesi cacbonat, dicaclci phosphat, dinatri phosphat, sắt pyrophosphat) chất nhũ hóa 322 (i) – chiết xuất từ đậu nành (soya lecithin), các vitamin (nicacin, biotin, canxi pantothenat, vitamin b6, B1, B2), chất tạo ngọt tổng hợp 950, 955 và hương vani tổng hợp.</p>
+        </article>
+      </section>
+      <section class="nutrients">
+        <h2>GIÁ TRỊ DINH DƯỠNG</h2>
+        <article>
+          <table align="center" width="600" style="
+    border:  3px solid white;
+    border-radius: 7px;margin-bottom: 30px;">
+            <tbody>
+              <tr>
+                <td class="nutrients-milo" colspan="3">Các chất dinh dưỡng trung bình trong 240 ml NESTLÉ MILO</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Năng lượng</td>
+                <td class="index-nutrients">171</td>
+                <td  class="index-nutrients">kcal</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Chất béo</td>
+                <td class="index-nutrients">5,0</td>
+                <td class="index-nutrients">g</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Chất đạm</td>
+                <td class="index-nutrients">5,7</td>
+                <td class="index-nutrients">g</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Natri</td>
+                <td class="index-nutrients">101</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Can-xi</td>
+                <td class="index-nutrients">193</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Ma-giê</td>
+                <td class="index-nutrients">64</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Sắt</td>
+                <td class="index-nutrients">2,51</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Carbohydrate</td>
+                <td class="index-nutrients">25</td>
+                <td class="index-nutrients">g</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Vitamin B1</td>
+                <td class="index-nutrients">0,23</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Vitamin B2</td>
+                <td class="index-nutrients">0,45</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Vitamin B6</td>
+                <td class="index-nutrients">0,45</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Niacin</td>
+                <td class="index-nutrients">3,6</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Axit Pantothenic</td>
+                <td class="index-nutrients">1,76</td>
+                <td class="index-nutrients">mg</td>
+              </tr>
+              <tr>
+                <td class="name-nutrients">Biotin</td>
+                <td class="index-nutrients">39</td>
+                <td class="index-nutrients">mcg</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </section>
+    </section>
+    <footer>
+      <section class="logo2"><img src="images/logo_logo.png" alt=""></section>
+      <section class="bq">
+        <p><strong>&copy; 2018 MILO, PD02424</strong></p>
+      </section>
+      <section class="box-footer">
+        <ul class="link">
+          <li> <a class="link1" target="_blank" href="#">Điều khoản và điều kiện</a> </li>
+          <li> <a class="link2" target="_blank" rel="keep-params" href="#">Quy tắc chính thức</a> </li>
+          <li> <a class="link3" target="_blank" href="#">Chính sách bảo mật</a> </li>
+          <li> <a class="link4" target="_blank" href="#">Hỗ trợ</a> </li>
+        </ul>
+        <ul class="social">
+          <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/facebook.png"></a></li>
+          <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/twitter.png"></a></li>
+          <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/youtube.png"></a></li>
+        </ul>
+      </section>
+      <section class="contact">Nếu có thắc mắc,xin gọi 0236 000 444 hoặc email <a href="#">nestlemilo@gmail.com</a></section>
+    </footer>
+  </section>
+</section>
+</body>
+</html>

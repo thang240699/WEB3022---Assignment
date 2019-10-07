@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Góc thể thao</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="css/css.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="thuvien.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+  </head>
+  <body onLoad="loadvideo();">
+  <section class="bg-chitiet">
+    <section id="wrapper">
+      <header>
+        <div class="from_header">
+          <div class="logo"><img src="images/logo_logo.png" alt=""></div>
+          <div class="from_login">
+            <span class="span"><input class="search" type="text" name="s" placeholder="Tìm kiếm"><button  class="sp" type="submit" ><i class="fa fa-search"></i></button></span>
+            <div class="login"><a href="#">Đăng nhập</a><a href="dangky.html">Đăng Ký</a></div>
+          </div>
+        </div>
+      </header>
+      <script>
+        $(function() {
+        var pull        = $('#pull');
+          menu        = $('nav ul');
+          menuHeight  = menu.height();
+       
+        $(pull).on('click', function(e) {
+          e.preventDefault();
+          menu.slideToggle();
+        });
+      });
+        </script>
+          <script>
+              
+          $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+          });
+            </script>
+        <nav class="clearfix">
+						<a href="#" id="pull">Menu</a>
+					<ul class="clearfix">
+						<li><a href="index.html">Trang chủ</a></li>
+						<li><a href="#">Sản phẩm</a></li>
+						<li><a href="#">Lịch sử</a></li>
+						<li><a href="gocthethao.html">Góc thể thao</a></li>
+						<li><a href="gocdinhduong.html">Góc dinh dưỡng</a></li>
+						<li><a href="#">Đại lý</a></li>
+			
+					</ul>
+					
+				</nav>
+      <section class="container">
+        <section class="text-reg">
+          <h1>VIDEO HỌC THỂ THAO</h1>
+        </section>
+        <section class="canvas">
+          <canvas id="canvasId" width="105" height="50"></canvas>
+          <script>
+		var context = document.getElementById("canvasId").getContext("2d");
+			
+			// Draw a path
+context.beginPath();
+context.moveTo(0, 0);        // Top Corner
+context.lineTo(50, 50); // Bottom Right
+context.lineTo(105,0);         // Bottom Left
+context.closePath();
+
+// Fill the path
+context.fillStyle = "#ffc821";
+context.fill();
+		</script> 
+        </section>
+		  
+        <section id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Bóng đá</a></li>
+            <li><a href="#tabs-2">Bóng rổ</a></li>
+          </ul>
+          <div id="tabs-1">
+            <article class="video">
+            <video id="myVideo" class="box-video" controls>
+              <source id="mp4_src" src="videos/0.mp4" type="video/mp4">
+            </video>
+            </article>
+            <script> 
+function video1() { 
+    document.getElementById("mp4_src").src = "videos/0.mp4";
+    document.getElementById("myVideo").load();
+} 
+		 function video2() { 
+    document.getElementById("mp4_src").src = "videos/1.mp4";
+    document.getElementById("myVideo").load();
+} 
+		 function video3() { 
+    document.getElementById("mp4_src").src = "videos/2.mp4";
+    document.getElementById("myVideo").load();
+} 
+		 function video4() { 
+    document.getElementById("mp4_src").src = "videos/3.mp4";
+    document.getElementById("myVideo").load();
+}
+		 function video5() { 
+    document.getElementById("mp4_src").src = "videos/4.mp4";
+    document.getElementById("myVideo").load();
+} 
+</script>	<h2>Các kỹ thuật cơ bản trong bóng đá</h2>
+            <section class="anh"> <img onClick="video1();" src="images/bong1.jpg"/> <img onClick="video2();" src="images/bong2.jpg"/> <img onClick="video3();" src="images/bong3.jpg"/> <img onClick="video4();" src="images/bong4.jpg"/> <img onClick="video5();" src="images/bong5.jpg"/> </section>
+          </div>
+          <div id="tabs-2">
+            <p>
+			  <article class="video">
+            <video class="box-video" controls>
+              <source src="videos/6.mp4" type="video/mp4">
+            </video>
+            </article>
+			  <h2>Các kỹ thuật cơ bản trong bóng rổ</h2>
+			  <section class="anh">
+			  <img src="images/ro1.JPG" alt="">
+			  <img src="images/ro2.JPG" alt="">
+			  <img src="images/ro3.JPG" alt="">
+			  <img src="images/ro4.JPG" alt="">
+			  <img src="images/ro5.JPG" alt="">
+			  </section>
+			  </p>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <section class="logo2"><img src="images/logo_logo.png" alt=""></section>
+        <section class="bq">
+          <p><strong>&copy; 2018 MILO, PD02424</strong></p>
+        </section>
+        <section class="box-footer">
+          <ul class= "link">
+            <li> <a class="link1" target="_blank" href="#">Điều khoản và điều kiện</a> </li>
+            <li> <a class="link2" target="_blank" rel="keep-params" href="#">Quy tắc chính thức</a> </li>
+            <li> <a class="link3" target="_blank" href="#">Chính sách bảo mật</a> </li>
+            <li> <a class="link4" target="_blank" href="#">Hỗ trợ</a> </li>
+          </ul>
+          <ul class="social">
+            <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/facebook.png"></a></li>
+            <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/twitter.png"></a></li>
+            <li><a target="_blank" href="#"><img src="https://d3tdkvfstzj7gy.cloudfront.net/images/pepsistuff/logos/youtube.png"></a></li>
+          </ul>
+        </section>
+        <section class="contact">Nếu có thắc mắc,xin gọi 0236 000 444 hoặc email <a href="#">nestlemilo@gmail.com</a></section>
+      </footer>
+    </section>
+  </section>
+</body>
+</html>
